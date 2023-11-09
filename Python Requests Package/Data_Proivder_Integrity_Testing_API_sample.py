@@ -15,7 +15,7 @@ for value in values:
     print("------------------------------------------------------------------------------------------------------------------")
     print("data_id : {}".format(value))
     
-    # build stings using list of values 
+    # build string using list of values 
     string = "https://api/getserviceproviderdata?id={}&Key=xxx" # {} acts as string placeholder
     string = string.format(value) # format() method formats the specified value(s) and insert them inside the string's placeholder.
     
