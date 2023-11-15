@@ -32,7 +32,3 @@ session.mount(url, set_adapter)
         raise SystemExit(error)
     except requests.exceptions.HTTPError as error:
         raise SystemExit(error)
-
-
-
-
