@@ -11,7 +11,7 @@ from datetime import datetime
 url = "string"
 headers = {'user-agent': 'my-app/x.x.x'}
 payload = {'key1': 'value1', 'key2': 'value2', 'key3': 'value3', 'key4': 'value4'}
-set_adapter = HTTPAdapter(max_retries = 3) # Build Transport Adapter, input max_retries parameter, and mount it to an existing Session:
+set_adapter = HTTPAdapter(max_retries = 3) # Build Transport Adapter, input max_retries parameter, and mount it to an existing Session
 timeout = (0.005,0.008) # connection timeout (connect,read) seconds
 
 # 
