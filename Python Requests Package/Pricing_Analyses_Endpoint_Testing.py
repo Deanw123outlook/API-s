@@ -28,7 +28,7 @@ for client in clients:
     print(client)
     
     #
-    payload = {"key":client, "FixtureId": 284929, "Sport":"1",
+    payload = {"key":client, "FixUniqueId": xxxxc, "Categpry":"4",
         "Markets":["market_1_ex","market_2_ex"],"I_L_ID": None, "ReturnMarketRecord":True,
         "ReturnMarkets":True}
     
