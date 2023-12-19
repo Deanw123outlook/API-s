@@ -1,4 +1,4 @@
-# import libraries
+we# import libraries
 import time
 import requests
 import numpy as np
@@ -29,7 +29,7 @@ for client in clients:
     
     #
     payload = {"key":client, "FixUniqueId": xxxxc, "Categpry":"4",
-        "Markets":["market_1_ex","market_2_ex"],"I_L_ID": None, "ReturnMarketRecord":True,
+        "Markets":["market_1_ex","market_2_ex","market_3_ex": None, "ReturnMarketRecord":True,
         "ReturnMarkets":True}
     
     #
