@@ -39,7 +39,7 @@ for client in clients:
     #
     pricing = response['Data']['PricingDetails']
     for k,v in pricing.items():
-        if k == 'Rw_Price_Float':
+        if k == 'Raw_Price_Float':
             print(k,v)
             priceFloat_key.append(k)
             prices_float.append(v)
@@ -60,7 +60,7 @@ rounded = pd.DataFrame ({'Property':priceFraction_key,'Price':prices_fraction,'C
 metadata_2 = pd.DataFrame ({'Client-Keys':cs,'Price-Request-Timestamp':timestamps})
 
 
-# plot
+# line plot analysis | Most upto date pricing for specific markets pulled from Feed provider API's
 fig, ax = plt.subplots()
 plt.style.use('ggplot')
 fig.suptitle('Client Decimal Price Rounded Analysis')
