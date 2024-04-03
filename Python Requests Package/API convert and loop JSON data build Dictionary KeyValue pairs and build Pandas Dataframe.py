@@ -6,7 +6,7 @@ import time # import time module
 
 clients = ["xxx_key_xxx"] # client key
 d = {} # initiate empty dictionary
-cs = [] # intiate empty dictionary
+cs = [] # intiate empty list
 
 for client in clients:
     print("-----------------------------------------------------------------------------------------------------------------")
