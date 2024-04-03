@@ -27,13 +27,13 @@ for client in clients:
     print("Client: ",client)
     
     #
-    for i in range(len(data['PayLoad']['MCVs'])): # range method (start,stop,step)
-        d["{}".format(data['PayLoad']['MCVs'][i]['Area'])] = data['PayLoad']['MCVs'][i]['Basketball'] # declare dictionary key value pairs based on data (looping JSON data)
+    for i in range(len(data['PayLoad']['VMCs'])): # range method (start,stop,step)
+        d["{}".format(data['PayLoad']['VMCs'][i]['Area'])] = data['PayLoad']['VMCs'][i]['Basketball'] # declare dictionary key value pairs based on data (looping JSON data)
     print("-----------------------------------------------------------------------------------------------------------------")
 
 # dataset market over-rides
 dataset = pd.DataFrame(d)
-dataset = dataset.rename_axis('MCVs').reset_index()
+dataset = dataset.rename_axis('VMCs').reset_index()
 
 # metadata
 metadata = pd.DataFrame({'Client-Key':cs,'Request-Timestamp-UTC':dt_request_sent,'Endpoint':url})
