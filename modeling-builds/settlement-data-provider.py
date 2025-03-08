@@ -26,7 +26,7 @@ for value in fixtures:
     #
     else:
         # build string/url parameter using list of values & manual input required query paramaters
-        string = "https://private-hiddden-denpoint?key=x12xv&fixtureId={}&pushSettlement=true&userId=1234&source=xv" # {} acts as a placeholder
+        string = "https://private-hiddden-endpoint?key=x12xv&fixtureId={}&pushSettlement=true&userId=1234&source=xv" # {} acts as a placeholder
         string = string.format(value) # format() method formats the specified value(s) and insert them inside the string's placeholder
         url = (string)
         try:
